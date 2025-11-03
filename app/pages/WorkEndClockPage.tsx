@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 'use client';
 
 import React, { useState, useEffect, useRef } from "react";
@@ -14,7 +13,7 @@ export default function WorkEndClockPage() {
   const [showSettings, setShowSettings] = useState(false);
   const [celebrating, setCelebrating] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationRef = useRef<number | null>(null);
+  const animationRef = useRef<number>();
 
   useEffect(() => {
     const timer = setInterval(() => {
